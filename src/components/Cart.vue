@@ -17,10 +17,10 @@
     <div class="cart-add">
       <h2>주문내역</h2>
       <div class="total">
-        <p>상품금액 : {{ totalPrice }}원</p>
-        <p>배송비 : {{ shippingFee === 0 ? "무료" : `${shippingFee}원` }}</p>
+        <p><strong>상품금액</strong> : {{ totalPrice }}원</p>
+        <p><strong>배송비</strong> : {{ shippingFee === 0 ? "무료" : `${shippingFee}원` }}</p>
         <p>(배송비 3,000원 5만원 이상 구매시 무료배송)</p>
-        <p>총 결제금액 : {{ payment }}원</p>
+        <p><strong>총 결제금액</strong> : {{ payment }}원</p>
         <button @click="handleOpen">주문결제</button>
       </div>
     </div>
@@ -78,6 +78,9 @@ import { useRouter } from 'vue-router';
     display: flex;
     padding: 2rem 5rem;
     gap: 1rem;
+    h2,h3{
+      margin: 15px;
+    }
     div{
       flex: 1;
       border: 1px solid #222;
@@ -90,6 +93,20 @@ import { useRouter } from 'vue-router';
           gap: 1rem;
           align-items: center;
           padding: 1rem;
+          img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px;
+            border-radius: 10px;
+          }
+          button{
+            background-color: #ddd;
+            outline: none;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -97,6 +114,15 @@ import { useRouter } from 'vue-router';
       .total{
         border: none;
         padding: 1rem;
+        button{
+          background-color: red;
+          color: #fff;
+          cursor: pointer;
+          padding: 10px 15px;
+          border: none;
+          outline: none;
+          margin-top: 20px;
+        }
       }
     }
   }

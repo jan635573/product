@@ -32,6 +32,21 @@ import { useRouter } from 'vue-router';
     display: flex;
     justify-content: space-between;
     padding: 2rem 5rem;
+    .router-link{
+      display: flex;
+      // gap: 1rem;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      a{
+        text-decoration: none;
+        color: #222;
+        padding: 5px 10px;
+        &:hover{
+          background-color: red;
+          color: #fff;
+        }
+      }
+    }
     ul{
       display: flex;
       gap: 3rem;
@@ -39,7 +54,7 @@ import { useRouter } from 'vue-router';
         cursor: pointer;
         &:hover{
           font-weight: bolder;
-          color: blue;
+          color: red;
         }
       }
     }

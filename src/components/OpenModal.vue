@@ -33,6 +33,15 @@
     .modal{
       background-color: #fff;
       padding: 3rem 5rem;
+      button{
+        padding: 10px 15px;
+        background-color: red;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+      }
     }
   }
 </style>

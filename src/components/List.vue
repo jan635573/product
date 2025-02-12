@@ -33,6 +33,19 @@
         height: 200px;
         object-fit: cover;
         border: 5px;
+        border-radius: 10px;
+      }
+      button{
+        background-color: #ddd;
+        outline: none;
+        border: none;
+        padding: 10px;
+        // color: #fff;
+        cursor: pointer;
+        &:hover{
+          background-color: red;
+          color: #fff;
+        }
       }
     }
   }
