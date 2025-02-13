@@ -59,4 +59,24 @@ import { useRouter } from 'vue-router';
       }
     }
   }
+  @media screen and (max-width:900px){
+    nav{
+      // width: 100%;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 0 auto;
+      padding: 20px;
+      .router-link{
+        a{
+          // padding: 0;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+      ul{
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 </style>

@@ -76,6 +76,7 @@ import { useRouter } from 'vue-router';
 <style lang="scss" scoped>
   .cart{
     display: flex;
+    flex-direction: row;
     padding: 2rem 5rem;
     gap: 1rem;
     h2,h3{
@@ -122,6 +123,23 @@ import { useRouter } from 'vue-router';
           border: none;
           outline: none;
           margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:900px){
+    .cart{
+      flex-direction: column;
+      padding: 1rem;
+      .cart-list{
+        ul{
+          li{
+            img{
+            width: 80px;
+            height: 80px;
+            }
+          }
         }
       }
     }
