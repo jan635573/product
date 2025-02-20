@@ -6,7 +6,7 @@
       <router-link to="/cart">장바구니</router-link>
     </div>
     <ul>
-      <li v-for="(list,idx) in categories" :key="idx" @click="selectedClick(list)">
+      <li v-for="(list,idx) in categories" :key="idx" @click="selectedClick(list)" >
         {{ list }}
       </li>
     </ul>
@@ -78,5 +78,9 @@ import { useRouter } from 'vue-router';
         align-items: center;
       }
     }
+  }
+
+  .active{
+    background-color: red;
   }
 </style>
