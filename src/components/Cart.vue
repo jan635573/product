@@ -77,14 +77,15 @@ import { useRouter } from 'vue-router';
   .cart{
     display: flex;
     flex-direction: row;
-    padding: 2rem 5rem;
+    padding: 0 5rem;
     gap: 1rem;
+    margin-top: 80px;
     h2,h3{
       margin: 15px;
     }
     div{
       flex: 1;
-      border: 1px solid #222;
+      border: 2px solid gold;
       border-radius: 5px;
     }
     .cart-list{
@@ -132,6 +133,7 @@ import { useRouter } from 'vue-router';
     .cart{
       flex-direction: column;
       padding: 1rem;
+      margin-top: 20px;
       .cart-list{
         ul{
           li{

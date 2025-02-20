@@ -31,7 +31,12 @@ import { useRouter } from 'vue-router';
   nav{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 5rem;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: gold;
+    h1{
+      color: red;
+    }
     .router-link{
       display: flex;
       // gap: 1rem;
@@ -41,6 +46,7 @@ import { useRouter } from 'vue-router';
         text-decoration: none;
         color: #222;
         padding: 5px 10px;
+        color: #fff;
         &:hover{
           background-color: red;
           color: #fff;
@@ -66,6 +72,7 @@ import { useRouter } from 'vue-router';
       gap: 1rem;
       margin: 0 auto;
       padding: 20px;
+      align-items: normal;
       .router-link{
         a{
           // padding: 0;
@@ -80,7 +87,8 @@ import { useRouter } from 'vue-router';
     }
   }
 
-  .active{
+  .router-link .route-active{
     background-color: red;
+    color: #fff;
   }
 </style>

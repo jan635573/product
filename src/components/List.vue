@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    margin-top: 80px;
     .card{
       width: 200px;
       text-align: center;
@@ -35,18 +36,29 @@
         border: 5px;
         border-radius: 10px;
       }
+      p{
+        &:first-of-type{
+          font-weight: bolder;
+        }
+      }
       button{
-        background-color: #ddd;
+        background-color: gold;
         outline: none;
         border: none;
         padding: 10px;
         // color: #fff;
+        margin-top: 10px;
         cursor: pointer;
         &:hover{
           background-color: red;
           color: #fff;
         }
       }
+    }
+  }
+  @media screen and (max-width:900px){
+    .product-list{
+      margin-top: 40px;
     }
   }
 </style>

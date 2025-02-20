@@ -70,4 +70,13 @@ const filterProducts = computed(()=>{
 </script>
 
 <style lang="scss" scoped>
+.app{
+  background-color: #fff;
+  height: 100vh;
+}
+@media screen and (max-width:900px){
+  .app{
+    height: 100%;
+  }
+}
 </style>
