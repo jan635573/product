@@ -1,5 +1,40 @@
-# Vue 3 + Vite
+# 쇼핑몰 상품 주문 웹 사이트
+## 프로젝트 설명
+본 프로젝트는 상품을 카테고리별로 정렬한 후 원하는 상품을 장바구니에 담고 주문까지 가능한 Vue3 기반의 웹 사이트입니다.
+상품 수량 추가 및 상품을 주문하면 주문 완료 팝업창이 뜬 후 장바구니에 담겨 있던 상품이 삭제되는 기능을 이용할 수 있으며 모바일 사용자의 편의성을 위해 반응형 레이아웃을 적용하였습니다. 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### 1. 레이아웃
+- **Vue 컴포넌트**를 기반으로 레이아웃을 배치하였습니다.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+### 2. 색상 사용
+- 쇼핑몰의 주 상품(패스트푸드)의 상징 색상이라고도 할 수 있는 red와 yellow 컬러를 주 색상으로 사용하였습니다.
+
+### 3. UI 디자인 방식
+- Flexbox를 활용하여 요소를 정렬하였습니다.
+
+### 4. 반응형 웹 지원
+- 모바일, 태블릿, 데스크톱 등의 **다양한 화면 크기에 최적화된 반응형 레이아웃**을 제공하여 사용자의 접근성을 높였습니다.
+- CSS 미디어 쿼리를 활용하여 각 디바이스에 맞춰 적절하게 레이아웃과 요소 크기가 조정되게끔 개발하였습니다.
+
+### 5. 제작에 사용된 스킬 및 툴
+- **디자인** : Figma
+- **프레임워크** : Vue3
+- **프론트엔드 개발** : Vue3, Vue Router
+
+### 6. 제작 참여율
+- 개인 프로젝트(100%)로 진행
+- 기획, UI 디자인 구상 및 설계, 개발, 배포까지 전 과정을 직접 수행하였습니다. 
+
+## 문제점 및 개선 계획
+### 1. 제작 사이트 문제점
+- 디자인이 너무 단조로움
+- 내부 상품 데이터가 부족함
+- 주문 완료 이후의 페이지가 없음
+- 서브 메뉴 클릭시 클릭한 메뉴가 무엇인지 알 수 없음
+
+### 2. 향후 개선 계획
+1. 클릭한 서브 메뉴 .active 클래스 추가
+2. 전체적 UI 디자인 수정
+3. 상품 데이터 추가
+4. 가격에 쉼표(,) 추가
+5. 장바구니에서 수량을 늘리거나 줄일 수 있게 수정
